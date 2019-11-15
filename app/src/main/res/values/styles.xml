@@ -1,0 +1,90 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Splash screen theme. -->
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/background_splash</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+    </style>
+
+    <style name="StandardCardView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_margin">8dp</item>
+    </style>
+
+    <style name="StandardRadioButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">5dp</item>
+    </style>
+
+    <style name="BubbleSeekBarEditor">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+
+        <item name="bsb_bubble_color">@color/colorAccent</item>
+        <item name="bsb_bubble_text_color">@color/colorPrimary</item>
+        <item name="bsb_second_track_color">@color/colorAccent</item>
+        <item name="bsb_track_color">@color/track_grey</item>
+
+        <item name="bsb_max">2</item>
+        <item name="bsb_min">-2</item>
+        <item name="bsb_progress">0</item>
+        <item name="bsb_section_count">4</item>
+
+        <item name="bsb_section_text_position">below_section_mark</item>
+
+        <item name="bsb_is_float_type">false</item>
+        <item name="bsb_show_progress_in_float">false</item>
+
+        <item name="bsb_hide_bubble">true</item>
+        <item name="bsb_show_section_mark">true</item>
+        <item name="bsb_show_thumb_text">true</item>
+        <item name="bsb_seek_step_section">true</item>
+    </style>
+
+    <style name="BubbleSeekBarStatistics">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+
+        <item name="android:enabled">false</item>
+
+        <item name="bsb_bubble_color">@color/colorAccent</item>
+        <item name="bsb_bubble_text_color">@color/colorPrimary</item>
+        <item name="bsb_second_track_color">@color/colorAccent</item>
+        <item name="bsb_track_color">@color/track_grey</item>
+
+        <item name="bsb_max">2</item>
+        <item name="bsb_min">-2</item>
+        <item name="bsb_progress">0</item>
+        <item name="bsb_section_count">4</item>
+
+        <item name="bsb_is_float_type">true</item>
+
+        <item name="bsb_hide_bubble">true</item>
+        <item name="bsb_show_section_mark">true</item>
+        <item name="bsb_show_thumb_text">true</item>
+    </style>
+
+    <style name="SCBSwitch" parent="Theme.AppCompat.Light">
+        <item name="colorControlActivated">@color/blacklist_button</item>
+    </style>
+
+</resources>

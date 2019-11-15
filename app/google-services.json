@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "427751891592",
+    "firebase_url": "https://accord-49b3f.firebaseio.com",
+    "project_id": "accord-49b3f",
+    "storage_bucket": "accord-49b3f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:427751891592:android:f1beafadf8045835",
+        "android_client_info": {
+          "package_name": "com.lukehere.app.accord"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "427751891592-qigii65tctcfmsba68cb1oba8lpbhq84.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lukehere.app.accord",
+            "certificate_hash": "b2869a9a62f3355dfcb7c3a0741f84c015aa73db"
+          }
+        },
+        {
+          "client_id": "427751891592-f4hk4gtrd2s90f2fmf2sjqrmaklnjuqh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZHYmtdkWQ6o3F_y82DfhSHoxFG9oCtgA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "427751891592-f4hk4gtrd2s90f2fmf2sjqrmaklnjuqh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

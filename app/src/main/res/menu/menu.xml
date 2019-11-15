@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/editor"
+        android:icon="@drawable/ic_action_group_add"
+        android:title="@string/editor_menu_title"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/statistics"
+        android:icon="@drawable/ic_action_playlist_add_check"
+        android:title="@string/statistics_menu_title"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/export"
+        android:title="@string/export_menu_title"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/about"
+        android:title="@string/about"
+        app:showAsAction="never" />
+</menu>

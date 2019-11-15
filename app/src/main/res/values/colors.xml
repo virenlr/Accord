@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#FFFFFF</color>
+    <color name="colorAccent">#304FFE</color>
+
+    <color name="text_black">#000000</color>
+    <color name="text_white">#FFFFFF</color>
+
+    <color name="cardview_border">#9E9E9E</color>
+
+    <color name="background_light">#FFFFFF</color>
+    <color name="background_dark">#ECEFF1</color>
+
+    <color name="background_grey">#EEEEEE</color>
+    <color name="track_grey">#9E9E9E</color>
+
+    <color name="blacklist_button">#000000</color>
+
+</resources>

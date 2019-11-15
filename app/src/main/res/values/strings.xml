@@ -1,0 +1,207 @@
+<resources>
+    <string name="app_name">Accord</string>
+
+    <!--Strings related to notifications -->
+    <string name="channel_id">alerts_channel</string>
+    <string name="channel_name">Alerts</string>
+    <string name="channel_description">Channel used to send important messages during the course of the event</string>
+
+    <!--Strings related to page and dialog titles -->
+    <string name="title_activity_login">Sign in</string>
+    <string name="editor_menu_title">Editor</string>
+    <string name="scanner_menu_title">Scanner</string>
+    <string name="statistics_menu_title">Statistics</string>
+    <string name="export_menu_title">Export</string>
+    <string name="about">About</string>
+    <string name="inspired_by_paper">Accord. Inspired by Paper.</string>
+
+    <string name="okay">Okay</string>
+    <string name="proceed">Continue</string>
+    <string name="cancel">Cancel</string>
+    <string name="warning">Warning</string>
+    <string name="updated">Updated</string>
+    <string name="submit">Submit</string>
+
+    <!-- Strings related to the login page -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="authentication_failed">Authentication failed.</string>
+    <string name="blank_fields">Email or password field is blank.</string>
+
+    <!--Strings related to the Main Activity page -->
+    <string name="press_back_to_exit">Press back again to exit</string>
+    <string name="error_getting_documents">Error getting documents.</string>
+
+    <string name="permission_denied">This feature cannot be used without the required permissions.</string>
+
+    <!--Strings related to About -->
+    <string name="about_menu_title">Accord v1.15</string>
+    <string name="developed_by">Developed by Viren Luke Radhakrishnan of the University Student Council.</string>
+
+    <!--Strings related to Export -->
+    <string name="export_information">The attendee information will be exported as a .xls file to your internal storage.</string>
+    <string name="database_being_exported">The database is being exported to the SD card</string>
+    <string name="database_exported_successfully">Your database was exported to</string>
+    <string name="database_export_failed">The export process failed</string>
+
+    <!--Strings related to the core Editor -->
+    <string name="confirm_back_press">You may have unsaved information. Are you sure you want to go back?</string>
+    <string name="registration_field_error">Registration number field is blank or incomplete</string>
+    <string name="search_option_first">Please use the search option first</string>
+    <string name="attendee_not_found">Attendee not found</string>
+    <string name="thank_you_for_feedback">Thank you for your feedback!</string>
+    <string name="attendance_registered_successfully">Attendance registered successfully.</string>
+    <string name="invalid_registration_number">Invalid registration number</string>
+
+    <string name="search">Search</string>
+    <string name="scan">Scan</string>
+    <string name="update">Update</string>
+
+    <!--Strings related to the Editor page -->
+    <string name="header_basic_information">Basic information</string>
+    <string name="header_priority">Priority</string>
+
+    <string name="hint_registration_number">Registration number</string>
+    <string name="hint_name">Name</string>
+    <string name="hint_age">Age</string>
+    <string name="hint_gender">Gender</string>
+    <string name="hint_stream_field">Stream/field</string>
+    <string name="hint_attendee_type">Attendee type</string>
+    <string name="hint_institution_organization">Institution/organization</string>
+    <string name="hint_designation">Designation</string>
+    <string name="hint_email_address">Email address</string>
+    <string name="hint_phone_number">Phone number</string>
+
+    <string name="option_low_prority">Low priority</string>
+    <string name="option_medium_priority">Medium priority</string>
+    <string name="option_high_priority">High priority</string>
+
+    <!--String array of possible gender types -->
+    <string-array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+    </string-array>
+
+    <!--String array of possible attendee types -->
+    <string-array name="attendee_type">
+        <item>Christite</item>
+        <item>Non-Christite</item>
+    </string-array>
+
+    <!--String array of all the stalls -->
+
+    <!--If you make a change to this array, ensure that you update the constant NUMBER_OF_STALLS
+     in ModifyAttendeeActivity.java as well. Otherwise, there will be errors-->
+    <string-array name="stall_list">
+        <item>None</item>
+        <item>(1) Computer Science Engineering</item>
+        <item>(2) Electrical and Electronics Engineering</item>
+        <item>(3) Mechanical Engineering</item>
+        <item>(4) Machine Design</item>
+        <item>(5) Automobile Engineering</item>
+        <item>(6) Civil Engineering</item>
+        <item>(7) Structural Engineering</item>
+        <item>(8) Electronics and Communication Engineering</item>
+        <item>(9) Information Technology Engineering</item>
+        <item>(10) B Arch</item>
+        <item>(11) BSc - CBZ, BCZ and BCB</item>
+        <item>(12) MSc - Botany/ Zoology/ Biotechnology</item>
+        <item>(13) BSc - CBZ, BCZ, BCB and PCM and MSc Organic and Analytical</item>
+        <item>(14) BCA, BSc – CME, CMS</item>
+        <item>(15) MCA, MSc (Comp Sci), (Comp Sci and Applications)</item>
+        <item>(16) BSc – PME, PCM and CME</item>
+        <item>(17) MSc (Physics)</item>
+        <item>(18) BSc – EMS, PCM, PME, CMS, CME and MSc (Mathematics)</item>
+        <item>(19) BSc – EMS, CMS</item>
+        <item>(20) BA LLB (Hons), BBA LLB (Hons) and LLM</item>
+        <item>(21) BCom (F and A), BCom (P), BCom (IF) and BBA (F and A)</item>
+        <item>(22) MSc Actuarial Science, MBA (Leadership Mgmt), MSc Strategic Mgmt</item>
+        <item>(23) BBA and MBA (Financial Management)</item>
+        <item>(24) BHM</item>
+        <item>(25) BCom, BCom (Hons)</item>
+        <item>(26) BCom Strategic Finance</item>
+        <item>(27) MCom</item>
+        <item>(28) BA - PEP and MA - Dance</item>
+        <item>(29) BA - TEP</item>
+        <item>(30) BA - HEP, EPS</item>
+        <item>(31) MA (IS)</item>
+        <item>(32) BEd and MA - Educational Psychology</item>
+        <item>(33) BA - PSEng, PSEco, TEP, MPE, PEP, CEP, JPEng and MSc Clinical, Counselling and HRDM</item>
+        <item>(34) BA - MPE</item>
+        <item>(35) BA - JPEng, CEP</item>
+        <item>(36) MA - Media and Comm. Studies</item>
+        <item>(37) BA - PSEco, EPS, PSEng</item>
+        <item>(38) MA Applied Sociology and MSW (HR, CCP)</item>
+        <item>(39) BA - HEP, EPS, PSEco and EMS</item>
+        <item>(40) MA - Applied Economics</item>
+        <item>(41) Dept of Languages</item>
+        <item>(42) BA English Studies and MA - English with Comm. Studies</item>
+        <item>(43) MBA</item>
+        <item>(44) BA Journalism (Honours)</item>
+        <item>(45) BBA (Honours)</item>
+        <item>(46) BBA (Finance and International Business)</item>
+        <item>(47) MBA (International Business)</item>
+        <item>(48) BBA and MBA (Travel and Tourism Management)</item>
+        <item>(49) BA English (Honours)</item>
+        <item>(50) MA (English with Cultural Studies)</item>
+        <item>(51) BSc Psychology (Honours)</item>
+        <item>(52) BA (English, Political Science and History)</item>
+        <item>(53) BA (Media, Economics and Political Science) </item>
+        <item>(54) BA Economics (Honours)</item>
+        <item>(55) Interdisciplinary Masters Programme</item>
+
+        <item>(56) Centre for Counselling and Health Services</item>
+        <item>(57) Dept of Physical Education</item>
+        <item>(58) National Cadet Corps</item>
+        <item>(59) Centre for Academic and Professional Support</item>
+        <item>(60) Student Welfare Office</item>
+        <item>(61) Parivarthana</item>
+        <item>(62) Centre for Social Action</item>
+        <item>(63) Student Council</item>
+        <item>(64) Office of Admissions</item>
+        <item>(65) Office of Placements</item>
+        <item>(66) Office of International Affairs</item>
+        <item>(67) Initiative for Creative Learning and Impact</item>
+
+        <item>(Main Auditorium) Anand Pillai (2:00 pm)</item>
+        <item>(Campus View) Shveta Raina (10:00 am)</item>
+        <item>(KE Auditorium) Syed Sultan (10:05 am)</item>
+        <item>(KE Auditorium) Aditya Kulkarni (11:10 am)</item>
+        <item>(Campus View) Siano Wilson (11:15 am)</item>
+        <item>(KE Auditorium) Sumit Ramani (12:15 pm)</item>
+    </string-array>
+
+    <!--Strings related to the feedback segment of the Editor page -->
+    <string name="header_stall_speech_name">Stall/speech name</string>
+    <string name="button_enable_disable_feedback">Feedback</string>
+    <string name="button_enable_disable_attendance">Attendance</string>
+
+    <string name="regular_question_one">How beneficial has your experience been with us?</string>
+    <string name="regular_question_two">Kindly rate the communication ability and overall attitude of the council member.</string>
+    <string name="regular_question_three">How encouraged are you to pursue the program after having visited this stall?</string>
+    <string name="regular_question_four">How do you feel about the department and its functioning?</string>
+    <string name="regular_question_five">Please rate your overall experience.</string>
+
+    <!--Strings related to Scanner -->
+    <string name="toggle_flash">Flash</string>
+
+    <!--Strings related to Statistics -->
+    <string name="total_number_of_attendees">Total number of attendees:</string>
+    <string name="number_of_christites">Number of Christites:</string>
+    <string name="number_of_non_christites">Number of non-Christites:</string>
+
+    <string name="set_stall_name_header">Set the stall/speech to generate the aggregate</string>
+    <string name="number_of_registered_attendees">Number of registered attendees:</string>
+    <string name="number_of_feedback_attendees">Number of feedback entries:</string>
+    <string name="download_report">Download report</string>
+
+    <string name="statistics_data_being_exported">The generated report is being saved to the SD card</string>
+    <string name="statistics_data_exported_successfully">The generated report was saved to</string>
+    <string name="statistics_data_export_failed">The report generation failed</string>
+
+    <string name="feedback_not_provided">No feedback given</string>
+
+    <string name="refresh">Refresh</string>
+</resources>

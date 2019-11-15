@@ -1,0 +1,52 @@
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+apply plugin: 'com.google.gms.google-services'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.lukehere.app.accord"
+        minSdkVersion 21
+        targetSdkVersion 28
+        versionCode 17
+        versionName "1.16"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    //Part of the standard Android design libraries
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'com.google.android.material:material:1.0.0'
+    //External library used for the expandable card views
+    implementation 'com.alespero:expandable-cardview:0.8'
+    //External library used for the feedback scale
+    implementation 'com.xw.repo:bubbleseekbar:3.19'
+    //Firebase core library
+    implementation 'com.google.firebase:firebase-core:16.0.6'
+    //Firebase Cloud Firestore library and Paging Recycler View
+    implementation 'com.google.firebase:firebase-firestore:17.1.3'
+    implementation 'com.firebaseui:firebase-ui-firestore:4.2.1'
+    implementation 'androidx.paging:paging-runtime:2.1.0-rc01'
+    //Firebase Crashlytics library
+    implementation 'com.crashlytics.sdk.android:crashlytics:2.9.7'
+    //Firebase Authentication library
+    implementation 'com.google.firebase:firebase-auth:16.0.5'
+    //Firebase Cloud Messaging library
+    implementation 'com.google.firebase:firebase-messaging:17.3.4'
+    //External library used for QR Code scanning
+    implementation 'me.dm7.barcodescanner:zxing:1.9.8'
+    //Custom built Apache POI JAR file to export the data
+    implementation files('libs/apache-poi-4.0.0-all.jar')
+}

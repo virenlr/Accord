@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/statistics_outer_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ProgressBar
+            android:id="@+id/statistics_loading_progress_bar"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:indeterminate="true"
+            android:indeterminateOnly="true"
+            android:visibility="gone" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:text="@string/total_number_of_attendees"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/total_number_of_attendees_text_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:textColor="@color/text_black"
+                        android:textSize="20sp"
+                        tools:text="100" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:text="@string/number_of_christites"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/number_of_christites_text_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:textColor="@color/text_black"
+                        android:textSize="16sp"
+                        tools:text="100" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:text="@string/number_of_non_christites"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/number_of_non_christites_text_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:textColor="@color/text_black"
+                        android:textSize="16sp"
+                        tools:text="100" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="@string/set_stall_name_header" />
+
+                <Spinner
+                    android:id="@+id/statistics_stall_spinner"
+                    style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:entries="@array/stall_list" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/header_registered_number_of_attendees_text_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="10dp"
+                        android:text="@string/number_of_registered_attendees"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/registered_number_of_attendees_text_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text_black"
+                        android:textSize="18sp"
+                        tools:text="21" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/header_feedback_number_of_attendees_text_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="10dp"
+                        android:text="@string/number_of_feedback_attendees"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/feedback_number_of_attendees_text_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text_black"
+                        android:textSize="18sp"
+                        tools:text="13" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/statistics_feedback_panel_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/statistics_feedback_question_one"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="@string/regular_question_one" />
+
+                    <com.xw.repo.BubbleSeekBar
+                        android:id="@+id/statistics_seekbar_1"
+                        style="@style/BubbleSeekBarStatistics" />
+
+                    <TextView
+                        android:id="@+id/statistics_feedback_question_two"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="@string/regular_question_two" />
+
+                    <com.xw.repo.BubbleSeekBar
+                        android:id="@+id/statistics_seekbar_2"
+                        style="@style/BubbleSeekBarStatistics" />
+
+                    <TextView
+                        android:id="@+id/statistics_feedback_question_three"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="@string/regular_question_three" />
+
+                    <com.xw.repo.BubbleSeekBar
+                        android:id="@+id/statistics_seekbar_3"
+                        style="@style/BubbleSeekBarStatistics" />
+
+                    <TextView
+                        android:id="@+id/statistics_feedback_question_four"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="@string/regular_question_four" />
+
+                    <com.xw.repo.BubbleSeekBar
+                        android:id="@+id/statistics_seekbar_4"
+                        style="@style/BubbleSeekBarStatistics" />
+
+                    <TextView
+                        android:id="@+id/statistics_feedback_question_five"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="@string/regular_question_five" />
+
+                    <com.xw.repo.BubbleSeekBar
+                        android:id="@+id/statistics_seekbar_5"
+                        style="@style/BubbleSeekBarStatistics" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/download_report_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:text="@string/download_report" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</ScrollView>
